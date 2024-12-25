@@ -93,6 +93,10 @@ PRODUCT_BOOT_JARS += \
     mediatek-services \
     oplus-support-wrapper
 
+# ImsInit hack
+PRODUCT_PACKAGES += \
+    ImsInit
+
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
 
