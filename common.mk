@@ -11,6 +11,9 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# Installs gsi keys into ramdisk, to boot a GSI with verified boot.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
+
 # Vendor Log Tag
 include $(COMMON_PATH)/configs/props/logtag.mk
 
