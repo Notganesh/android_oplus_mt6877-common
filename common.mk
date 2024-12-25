@@ -129,6 +129,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-service.mt6877
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0.vendor \
