@@ -121,6 +121,17 @@ PRODUCT_AAPT_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 
 # Sensor
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@2.0-service-multihal.mt6877 \
+    als_correction_service.mt6877 \
+    android.hardware.sensors@1.0.vendor \
+    android.hardware.sensors@2.0.vendor \
+    android.hardware.sensors@2.1.vendor \
+    android.hardware.sensors@2.0-ScopedWakelock.vendor \
+    android.frameworks.sensorservice@1.0.vendor \
+    libsensorndkbridge \
+    libpower.vendor
+
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     $(COMMON_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
