@@ -181,9 +181,11 @@ PRODUCT_PACKAGES += \
 
 # rro_overlays
 PRODUCT_PACKAGES += \
+    CarrierConfigOverlay \
     TetheringConfigOverlay \
-    TelephonyOverlay
-
+    TelephonyOverlay \
+    WifiOverlay \
+    
 # Screen Density
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
