@@ -143,6 +143,7 @@ BOARD_ROOT_EXTRA_FOLDERS += metadata
 # Properties
 TARGET_VENDOR_PROP += $(COMMON_PATH)/configs/props/vendor.prop
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/configs/props/system.prop
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/configs/props/product.prop
 
 # Recovery
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
