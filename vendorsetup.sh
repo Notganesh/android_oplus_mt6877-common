@@ -7,5 +7,8 @@ git clone -b lineage-21 https://github.com/LineageOS/android_hardware_mediatek.g
 # Sepolicy
 git clone -b lineage-21 https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git device/mediatek/sepolicy_vndr
 
-#Wlan
+# Wlan
 git clone https://github.com/nashc-dev/android_hardware_mediatek_wlan.git hardware/mediatek/wlan
+
+# Patches
+bash device/oplus/mt6877-common/patches/apply.sh
