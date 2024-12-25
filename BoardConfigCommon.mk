@@ -109,6 +109,10 @@ BOARD_MAIN_PARTITION_LIST := system system_ext vendor product odm
 BOARD_SUPER_PARTITION_SIZE := 10200547328
 BOARD_SUPER_PARTITION_GROUPS := main
 
+# Properties
+TARGET_VENDOR_PROP += $(COMMON_PATH)/configs/props/vendor.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/configs/props/system.prop
+
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS ?= $(COMMON_PATH)/releasetools
 
