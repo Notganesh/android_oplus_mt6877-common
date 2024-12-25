@@ -419,5 +419,13 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     $(COMMON_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
+ # libshims
+PRODUCT_PACKAGES += \
+    libjni_shim \
+    libsensors_shim
+
+PRODUCT_PACKAGES += \
+    libshim_ui
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/oplus/mt6877-common/mt6877-common-vendor.mk)
