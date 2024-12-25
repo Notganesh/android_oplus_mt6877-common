@@ -319,7 +319,16 @@ PRODUCT_PACKAGES += \
     OplusDozeOverlay \
     OPlusSettingsResTarget
     WifiOverlay \
+
+# Overlays
+PRODUCT_PACKAGES += \
     
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
+# Enforce RRO targets
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
 # Screen Density
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
