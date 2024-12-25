@@ -87,8 +87,9 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/permissions/privapp-permissions-oplus.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-oplus.xml \
     $(COMMON_PATH)/configs/permissions/privapp-permissions-oplus.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-oplus.xml
 
-# publiclibraries   
-$(COMMON_PATH)/configs/publiclibraries/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+# publiclibraries
+PRODUCT_COPY_FILES += \
+     $(COMMON_PATH)/configs/publiclibraries/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # Rootdir
 PRODUCT_PACKAGES += \
@@ -108,6 +109,12 @@ PRODUCT_PACKAGES += \
     fstab.mt6877.ramdisk \
     ueventd.oplus.rc \
     ueventd.mtk.rc
+
+# Screen Density
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+PRODUCT_AAPT_CONFIG := xxxhdpi
+PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 
 # Sensor
 PRODUCT_COPY_FILES += \
