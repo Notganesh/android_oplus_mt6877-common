@@ -106,5 +106,8 @@ BOARD_MAIN_PARTITION_LIST := system system_ext vendor product odm
 BOARD_SUPER_PARTITION_SIZE := 10200547328
 BOARD_SUPER_PARTITION_GROUPS := main
 
+#  Ril
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # inherit from the proprietary version
 include vendor/oplus/mt6877-common/BoardConfigVendor.mk
