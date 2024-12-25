@@ -109,8 +109,11 @@ BOARD_MAIN_PARTITION_LIST := system system_ext vendor product odm
 BOARD_SUPER_PARTITION_SIZE := 10200547328
 BOARD_SUPER_PARTITION_GROUPS := main
 
-#  Ril
+# Ril
 ENABLE_VENDOR_RIL_SERVICE := true
+
+# Sepolicy
+BOARD_SEPOLICY_DIRS  += $(COMMON_PATH)/sepolicy/vendor
 
 # Wi-Fi
 BOARD_WLAN_DEVICE := MediaTek
