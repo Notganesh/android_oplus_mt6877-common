@@ -6,6 +6,11 @@
 
 COMMON_PATH := device/oplus/mt6877-common
 
+PRODUCT_SHIPPING_API_LEVEL := 30
+
+# Vendor Log Tag
+include $(COMMON_PATH)/configs/props/logtag.mk
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
