@@ -160,6 +160,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-service.mt6877
 
+#  MTK InCallService
+PRODUCT_PACKAGES += \
+    MtkInCallService
+
+# fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Media
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
