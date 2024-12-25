@@ -53,6 +53,23 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.oplus
 
+# Display
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@2.0.vendor \
+    android.hardware.graphics.allocator@3.0.vendor \
+    android.hardware.graphics.allocator@4.0.vendor \
+    android.hardware.graphics.composer@2.1-resources.vendor \
+    android.hardware.graphics.composer@2.2-resources.vendor \
+    android.hardware.graphics.composer@2.3-service \
+    android.hidl.allocator@1.0.vendor \
+    android.hardware.memtrack-service.mediatek-mali \
+    android.hardware.graphics.common-V2-ndk_platform.vendor \
+    android.hardware.graphics.common-V2-ndk.vendor \
+    disable_configstore \
+    vndservicemanager \
+    libion.vendor \
+    libui.vendor
+
 # IMS
 PRODUCT_BOOT_JARS += \
     mediatek-common \
