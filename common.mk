@@ -179,6 +179,11 @@ PRODUCT_PACKAGES += \
     ueventd.oplus.rc \
     ueventd.mtk.rc
 
+# rro_overlays
+PRODUCT_PACKAGES += \
+    TetheringConfigOverlay \
+    TelephonyOverlay
+
 # Screen Density
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
