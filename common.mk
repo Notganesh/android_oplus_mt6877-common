@@ -494,6 +494,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.oplus
 
+# USB
+$(call soong_config_set,android_hardware_mediatek_usb,audio_accessory_supported,true)
+
+PRODUCT_PACKAGES += \
+    android.hardware.usb-service.mediatek \
+    android.hardware.usb.gadget-service.mediatek
+
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.mt6877
