@@ -133,6 +133,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/permissions/nfc_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/nfc_features.xml
 
+# OplusDoze
+PRODUCT_PACKAGES += \
+    OplusDoze
+
 # Power
 $(call inherit-product, $(COMMON_PATH)/power-libperfmgr/power-libperfmgr.mk)
 
@@ -181,9 +185,16 @@ PRODUCT_PACKAGES += \
 
 # rro_overlays
 PRODUCT_PACKAGES += \
+    FrameworkResOverlayPlatform \
+    SystemUIOverlayPlatform \
+    SettingsOverlayPlatform \
     CarrierConfigOverlay \
     TetheringConfigOverlay \
     TelephonyOverlay \
+    DozeOverlaySystem \
+    DozeOverlaySystemUI \
+    OplusDozeOverlay \
+    OPlusSettingsResTarget
     WifiOverlay \
     
 # Screen Density
