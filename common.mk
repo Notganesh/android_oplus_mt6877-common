@@ -152,9 +152,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor \
     libcurl.vendor
 
-PRODUCT_PACKAGES += \
-    android.hardware.gnss-service.mediatek
-
 # Health
 PRODUCT_PACKAGES += \
    android.hardware.health@2.1-service \
@@ -195,8 +192,7 @@ PRODUCT_BOOT_JARS += \
     mediatek-framework \
     mediatek-ims-base \
     mediatek-ims-common \
-    mediatek-services \
-    oplus-support-wrapper
+    mediatek-services
 
 # ImsInit hack
 PRODUCT_PACKAGES += \
@@ -216,7 +212,7 @@ PRODUCT_PACKAGES += \
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
-    
+
 # OMX
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-service \
@@ -428,8 +424,8 @@ PRODUCT_PACKAGES += \
     DozeOverlaySystem \
     DozeOverlaySystemUI \
     OplusDozeOverlay \
-    OPlusSettingsResTarget
-    WifiOverlay \
+    OPlusSettingsResTarget \
+    WifiOverlay
 
 # RcsService
 PRODUCT_PACKAGES += \
@@ -439,7 +435,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    
+
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
@@ -480,7 +476,7 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.0.vendor \
     android.hardware.secure_element@1.1.vendor \
     android.hardware.secure_element@1.2.vendor
-    
+
 # Soundtrigger
 PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl \
@@ -489,7 +485,6 @@ PRODUCT_PACKAGES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0-service.mtk \
     android.hardware.thermal@2.0.vendor \
     android.hardware.thermal@1.0-impl
 
@@ -497,10 +492,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.oplus
 
-# USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3-service-mediatekv2
- 
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.mt6877
