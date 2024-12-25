@@ -112,6 +112,9 @@ BOARD_SUPER_PARTITION_GROUPS := main
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS ?= $(COMMON_PATH)/releasetools
 
+# Reserve space for gapps install
+-include vendor/lineage/config/BoardConfigReservedSize.mk
+
 # Ril
 ENABLE_VENDOR_RIL_SERVICE := true
 
