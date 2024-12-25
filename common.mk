@@ -97,6 +97,12 @@ PRODUCT_PACKAGES += \
     libdrm.vendor \
     libdrm
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-service \
+    android.hardware.gatekeeper@1.0-impl \
+    libgatekeeper.vendor
+
 # GNSS
 PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.0.vendor \
