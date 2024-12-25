@@ -85,6 +85,18 @@ PRODUCT_PACKAGES += \
     libion.vendor \
     libui.vendor
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm-service.clearkey \
+    android.hardware.drm@1.0.vendor \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.3.vendor \
+    android.hardware.drm@1.4.vendor \
+    libmockdrmcryptoplugin \
+    libdrm.vendor \
+    libdrm
+
 # Health
 PRODUCT_PACKAGES += \
    android.hardware.health@2.1-service \
