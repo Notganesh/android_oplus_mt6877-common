@@ -119,6 +119,7 @@ TARGET_RELEASETOOLS_EXTENSIONS ?= $(COMMON_PATH)/releasetools
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Sepolicy
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
 BOARD_SEPOLICY_DIRS  += $(COMMON_PATH)/sepolicy/vendor
 
 # Touch
