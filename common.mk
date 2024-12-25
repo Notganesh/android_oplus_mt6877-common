@@ -8,6 +8,9 @@ COMMON_PATH := device/oplus/mt6877-common
 
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# Dalvik
+$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
 # Vendor Log Tag
 include $(COMMON_PATH)/configs/props/logtag.mk
 
