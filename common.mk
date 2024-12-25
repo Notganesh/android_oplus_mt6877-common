@@ -70,6 +70,11 @@ PRODUCT_PACKAGES += \
     libion.vendor \
     libui.vendor
 
+# Health
+PRODUCT_PACKAGES += \
+   android.hardware.health@2.1-service \
+   android.hardware.health@2.1-impl
+
 # IMS
 PRODUCT_BOOT_JARS += \
     mediatek-common \
