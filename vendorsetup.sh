@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -rf hardware/oplus
+
 # Kernel
 git clone https://github.com/Notganesh/kernel_oneplus_ivan.git -b vooc kernel/oplus/mt6877
 
@@ -11,7 +13,7 @@ git clone https://github.com/oplus-ivan-development/vendor_oplus_ivan.git vendor
 git clone https://github.com/oplus-ivan-development/vendor_oplus_mt6877-common.git vendor/oplus/mt6877-common
 
 # Hardware
-git clone -b lineage-21 https://github.com/LineageOS/android_hardware_oplus.git hardware/oplus
+git clone -b lineage-21 https://github.com/Notganesh/android_hardware_oplus.git hardware/oplus
 git clone -b lineage-21 https://github.com/LineageOS/android_hardware_mediatek.git hardware/mediatek
 git clone -b lineage-21 https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git device/mediatek/sepolicy_vndr
 
