@@ -396,22 +396,23 @@ PRODUCT_PACKAGES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
+    fstab.mt6877.ramdisk \
+    fstab.mt6877 \
     init.connectivity.common.rc \
-    init.recovery.mt6877.rc \
     init.connectivity.rc \
+    init_connectivity.rc \
     init.modem.rc \
-    init.oplus.rc \
     init.mt6877.rc \
     init.mt6877.usb.rc \
-    init.mt6877.power.rc \
     init.project.rc \
     init.sensor_2_0.rc \
     init.target.rc \
-    init_conninfra.rc \
-    fstab.mt6877 \
-    fstab.mt6877.ramdisk \
+    ueventd.mtk.rc \
     ueventd.oplus.rc \
-    ueventd.mtk.rc
+
+# Fastboot
+PRODUCT_PACKAGES += \
+    init.recovery.mt6877.rc
 
 # rro_overlays
 PRODUCT_PACKAGES += \
